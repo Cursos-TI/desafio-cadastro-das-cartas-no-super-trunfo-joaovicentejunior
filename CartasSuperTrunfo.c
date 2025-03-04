@@ -19,23 +19,32 @@ int main() {
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
     //Declaração Variáveis
-    char v_CdCarta_1[5], v_NmCidade_1[50], v_CdUF_1[2], v_CdCarta_2[5], v_NmCidade_2[50], v_CdUF_2[2];
+    char v_CdCarta_1[5], v_NmCidade_1[50], v_CdEstado_1[1], v_CdCarta_2[5], v_NmCidade_2[50], v_CdEstado_2[1];
     int v_QtdPopulacao_1, v_QtdPontosTuristicos_1, v_QtdPopulacao_2, v_QtdPontosTuristicos_2; 
     float v_QtdArea_1, v_VlPIB_1, v_QtdArea_2, v_VlPIB_2;
 
-    char codigo1;
-
+    // Cabeçalho da tela
     printf("*** INFORME OS DADOS DA CARTA 1 ***\n");
+
+    // Entrada do Estado
+    printf("Informe o Estado: ");
+    scanf("%s", &v_CdEstado_1);    
+
+    printf("O estado da caarta 1 é: %s\n", v_CdEstado_1);
+    
     printf("Informe o código da carta: ");
     scanf("%s", &v_CdCarta_1);
+    
+    printf("Informe o código da carta: ");
+    scanf("%s", &v_CdCarta_1);
+    
     printf("Informe o nome da cidade: ");
     scanf("%s", &v_NmCidade_1);    
-    printf("Informe a UF: ");
-    scanf("%s", &v_CdUF_1);    
+    
     
     printf("O código da carga 1 é: %s\n", v_CdCarta_1);
     printf("A cidade da carga 1 é: %s\n", v_NmCidade_1);
-    printf("A UF da carga 1 é: %s\n", v_CdUF_1);
+
 
     return 0;
 
@@ -43,6 +52,21 @@ int main() {
 
 
 /*
+	• Estado: Uma letra de 'A' a 'H' (representando um dos oito estados). Tipo: char
+ 
+	• Código da Carta: A letra do estado seguida de um número de 01 a 04 (ex: A01, B03). Tipo: char[] (um array de caracteres, ou string)
+ 
+	• Nome da Cidade: O nome da cidade. Tipo: char[] (string)
+ 
+	• População: O número de habitantes da cidade. Tipo: int
+ 
+	• Área (em km²): A área da cidade em quilômetros quadrados. Tipo: float
+ 
+	• PIB: O Produto Interno Bruto da cidade. Tipo: float
+ 
+Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade. Tipo: int
+
+
 Carta 1:
 Estado: A
 Código: A01
