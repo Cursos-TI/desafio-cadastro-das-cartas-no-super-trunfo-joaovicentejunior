@@ -18,5 +18,47 @@ int main() {
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
+    //Declaração Variáveis
+    char v_CdCarta_1[5], v_NmCidade_1[50], v_CdUF_1[2], v_CdCarta_2[5], v_NmCidade_2[50], v_CdUF_2[2];
+    int v_QtdPopulacao_1, v_QtdPontosTuristicos_1, v_QtdPopulacao_2, v_QtdPontosTuristicos_2; 
+    float v_QtdArea_1, v_VlPIB_1, v_QtdArea_2, v_VlPIB_2;
+
+    char codigo1;
+
+    printf("*** INFORME OS DADOS DA CARTA 1 ***\n");
+    printf("Informe o código da carta: ");
+    scanf("%s", &v_CdCarta_1);
+    printf("Informe o nome da cidade: ");
+    scanf("%s", &v_NmCidade_1);    
+    printf("Informe a UF: ");
+    scanf("%s", &v_CdUF_1);    
+    
+    printf("O código da carga 1 é: %s\n", v_CdCarta_1);
+    printf("A cidade da carga 1 é: %s\n", v_NmCidade_1);
+    printf("A UF da carga 1 é: %s\n", v_CdUF_1);
+
     return 0;
+
 }
+
+
+/*
+Carta 1:
+Estado: A
+Código: A01
+Nome da Cidade: São Paulo
+População: 12325000
+Área: 1521.11 km²
+PIB: 699.28 bilhões de reais
+Número de Pontos Turísticos: 50
+ 
+Carta 2:
+Estado: B
+Código: B02
+Nome da Cidade: Rio de Janeiro
+População: 6748000
+Área: 1200.25 km²
+PIB: 300.50 bilhões de reais
+Número de Pontos Turísticos: 30    
+
+*/
